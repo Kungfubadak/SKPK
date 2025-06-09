@@ -1,0 +1,316 @@
+/* Umum */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: darkblue; /* Latar belakang biru muda terang */
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Umum */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h2, h3 {
+  color: white; /* Warna biru tua untuk heading */
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Login Container */
+.login-container {
+  background-color: #ffffff; /* Latar belakang putih */
+  border-radius: 12px; /* Border lebih halus */
+  width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Shadow lebih besar dan halus */
+  text-align: center;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px; /* Border lebih halus */
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 14px;
+  background-color: #003366; /* Biru tua untuk tombol */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px; /* Border lebih halus */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.login-container button:hover {
+  background-color: #002244; /* Biru tua lebih gelap saat hover */
+}
+
+/* Daftar PR */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow lebih halus */
+  transition: transform 0.3s ease-in-out;
+  color: darkblue;
+}
+
+li:hover {
+  transform: translateY(-5px); /* Efek hover untuk daftar PR */
+}
+
+/* Tombol */
+button {
+  padding: 12px 20px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 6px; /* Border lebih halus */
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+/* Form PR (untuk Guru) */
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px; /* Border lebih halus */
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .login-container {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa; /* Latar putih kebiruan */
+  color: #333;
+}
+
+.header {
+  background-color: #003366; /* Biru tua */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #002244;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #003366;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  background-color: #003366;
+  color: white;
+  border-top: 5px solid #002244;
+}
+
+header {
+  text-align: center;
+margin-bottom: 20px;
+background-color: #003366;
+color: white;
+}
+
+/* Tambahan animasi untuk konten */
+main, .container, .login-container {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  scroll-behavior: smooth;
+  background-color: darkblue;
+  color:white
+}
+/* Navigasi Toggle */
+.nav-toggle-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#menu-toggle {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#menu-toggle:hover {
+  background-color: #002244;
+}
+
+#menu-items {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu-items a {
+  text-decoration: none;
+  color: #003366;
+  background-color: white;
+  padding: 10px 20px;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+#menu-items a:hover {
+  background-color: #003366;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Sembunyikan menu */
+.menu-hidden {
+  display: none;
+}
+
+.nav-toggle-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#menu-toggle {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#menu-toggle:hover {
+  background-color: #002244;
+}
+
+#menu-items {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu-items a {
+  text-decoration: none;
+  color: #003366;
+  background-color: white;
+  padding: 10px 20px;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+#menu-items a:hover {
+  background-color: #003366;
+  color: white;
+  transform: scale(1.05);
+}
+
+.menu-hidden {
+  display: none;
+}
